@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
     <title>Fruit Burst</title>
 </head>
-<body>
+<body class="font-lato">
     <nav id="Navbar">
         <div class="section--container max-[425px]:max-w-[90%] min-[769px]:hidden">
            <div class="navbar bg-base-100 mt-[2rem] px-0">
@@ -53,10 +56,10 @@
         </div>
     </nav>
     <section id="Hero">
-      <div class="section--container max-[425px]:max-w-[90%]">
+      <div class="section--container max-[425px]:max-w-[90%] flex flex-col gap-2 relative">
         <div class="carousel w-full max-[425px]:rounded-xl">
             <div id="slide1" class="carousel-item relative w-full">
-                <div class="hero w-full max-[425px]:h-15rem max-[768px]:h-[20rem] max-[425px]:h-[15rem] h-[40rem] bg-cover" style="background-image: url(images/banner1.png);">
+                <div class="hero w-full max-[425px]:h-15rem max-[768px]:h-[20rem] max-[425px]:h-[15rem] h-[30rem] bg-cover" style="background-image: url(images/banner1.png);">
                     <div class="min-[769px]:hidden hero-overlay bg-opacity-60"></div>
                     <div class="hero-overlay max-[768px]:hidden bg-gradient-to-b from-black to-transparent"></div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -72,7 +75,7 @@
                 
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
-                <div class="hero w-full  max-[768px]:h-[20rem] max-[425px]:h-[15rem] h-[40rem] bg-cover" style="background-image: url(images/banner2.png);">
+                <div class="hero w-full  max-[768px]:h-[20rem] max-[425px]:h-[15rem] h-[30rem] bg-cover" style="background-image: url(images/banner2.png);">
                     <div class="min-[769px]:hidden hero-overlay bg-opacity-60"></div>
                     <div class="hero-overlay max-[768px]:hidden bg-gradient-to-b from-black to-transparent"></div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -87,7 +90,7 @@
                 </div>
             </div> 
             <div id="slide3" class="carousel-item relative w-full">
-                <div class="hero w-full  max-[768px]:h-[20rem] max-[425px]:h-[15rem] h-[40rem]  bg-cover" style="background-image: url(images/banner3.png);">
+                <div class="hero w-full  max-[768px]:h-[20rem] max-[425px]:h-[15rem] h-[30rem]  bg-cover" style="background-image: url(images/banner3.png);">
                     <div class="min-[769px]:hidden hero-overlay bg-opacity-60"></div>
                     <div class="hero-overlay max-[768px]:hidden bg-gradient-to-b from-black to-transparent"></div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -102,7 +105,7 @@
                 </div>
             </div> 
             <div id="slide4" class="carousel-item relative w-full">
-                <div class="hero w-full max-[768px]:h-[20rem] max-[425px]:h-[15rem] h-[40rem] bg-cover" style="background-image: url(images/banner3.png);">
+                <div class="hero w-full max-[768px]:h-[20rem] max-[425px]:h-[15rem] h-[30rem] bg-cover" style="background-image: url(images/banner4.png);">
                     <div class="min-[769px]:hidden hero-overlay bg-opacity-60"></div>
                     <div class="hero-overlay max-[768px]:hidden bg-gradient-to-b from-black to-transparent"></div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -117,9 +120,302 @@
               </div>
             </div>
             </div>
-          </div>
+        </div>
+        <div class="grid grid-cols-5 justify-items-center items-center gap-[3.2rem] gap-y-[1.6rem] w-[80%] bg-white px-[3rem] py-[2.4rem] absolute top-[100%] left-[50%] -translate-y-1/2 -translate-x-1/2 rounded-xl max-[1080px]:hidden shadow-lg">
+          <img src="images/fruit1.png">
+          <img src="images/fruit2.png">
+          <img src="images/fruit3.png">
+          <img src="images/fruit4.png">
+          <img src="images/fruit5.png">
+          <p>Grape</p>
+          <p>Orange</p>
+          <p>Mango</p>
+          <p>Strawberry</p>
+          <p>Pomegranate</p>
+        </div>
       </div>
     </section>
+    <section id="Deals" class="mt-[12.8rem] max-[768px]:mt-[1.6rem]">
+      <div class="section--container flex flex-col justify-center">
+        <div class="flex flex-row max-[768px]:flex-col max-[768px]:gap-10 items-center justify-between">
+           <div class="text-left max-[768px]:text-center w-[40%] max-[768px]:w-[60%] max-[425px]:w-[100%]">
+            <h1 class="text-black text-[2.4rem] font-[700] mb-3">Deal of the day</h1>
+            <p class="text-lightGray opacity-[0.8]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+           </div>
+           <div class="grid grid-flow-col gap-7 max-[425px]:gap-3 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-lato text-5xl font-[700]">
+                <span style="--value:15;"></span>
+              </span>
+              Days
+            </div>
+            <ion-icon name="ellipsis-vertical" class="py-5"></ion-icon>
+            <div class="flex flex-col">
+              <span class="countdown font-lato text-5xl font-[700]">
+                <span style="--value:10;"></span>
+              </span>
+              Hours
+            </div> 
+            <ion-icon name="ellipsis-vertical" class="py-5"></ion-icon>
+            <div class="flex flex-col">
+              <span class="countdown font-lato text-5xl font-[700]">
+                <span style="--value:24;"></span>
+              </span>
+              Minutes
+            </div> 
+            <ion-icon name="ellipsis-vertical" class="py-5"></ion-icon>
+            <div class="flex flex-col">
+              <span class="countdown font-lato text-5xl font-[700]">
+                <span style="--value:45;"></span>
+              </span>
+              Seconds
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row max-[768px]:flex-col max-[768px]:gap-10 items-center justify-between mt-[2.4rem]">
+            <div class="flex flex-col items-center justify-center  border-2 rounded-md px-[4rem] py-[2.4rem]">
+              <img src="images/fruit6.png" alt="">
+              <h3 class="font-[600] mt-[1.2rem]">12.90$ - 18.85$</h3>
+              <div class="divider my-2 w-[12rem]"></div> 
+              <p class="text-xs text-lightGray opacity-[0.8] mb-4">Apples</p>
+              <div class="rating rating-sm rating-half justify-center mb-4">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />     
+            </div>
+            <button class="text-red-400 font-[600]" onclick="my_modal_1.showModal()">Details</button>
+              <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+              <img src="images/fruit6.png">
+              <h3 class="font-bold text-lg">Apples</h3>
+              <div class="w-[70%]"><p class="py-4 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p></div>
+              <div class="rating rating-sm rating-half justify-center mb-4">
+                <input type="radio" name="rating-1" class="rating-hidden" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />     
+            </div>
+              <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+              <button class="btn bg-white text-red-400 border-1 border-red-400 rounded-md capitalize mr-2">Close</button>
+              <a href="#" class="btn bg-red-400 text-white border-1 border-red-400 rounded-md capitalize px-[1.6rem]">Shop Now</a>
+              </div>
+              </form>
+              </dialog>
+        </div>
+        <div class="flex flex-col items-center justify-center  border-2 rounded-md px-[4rem] py-[2.4rem]">
+          <img src="images/fruit7.png" alt="" class="h-[131px]">
+          <h3 class="font-[600] mt-[1.2rem]">12.90$ - 18.85$</h3>
+          <div class="divider my-2 w-[12rem]"></div> 
+          <p class="text-xs text-lightGray opacity-[0.8] mb-4">Oranges</p>
+          <div class="rating rating-sm rating-half justify-center mb-4">
+            <input type="radio" name="rating-8" class="rating-hidden" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-8" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />     
+        </div>
+        <button class="text-red-400 font-[600]" onclick="my_modal_2.showModal()">Details</button>
+              <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+              <img src="images/fruit7.png">
+              <h3 class="font-bold text-lg">Oranges</h3>
+              <div class="w-[70%]"><p class="py-4 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p></div>
+              <div class="rating rating-sm rating-half justify-center mb-4">
+                <input type="radio" name="rating-1" class="rating-hidden" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />     
+            </div>
+              <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+              <button class="btn bg-white text-red-400 border-1 border-red-400 rounded-md capitalize mr-2">Close</button>
+              <a href="#" class="btn bg-red-400 text-white border-1 border-red-400 rounded-md capitalize px-[1.6rem]">Shop Now</a>
+              </div>
+              </form>
+              </dialog>
+    </div>
+    <div class="flex flex-col items-center justify-center  border-2 rounded-md px-[4rem] py-[2.4rem]">
+      <img src="images/fruit8.png" alt="">
+      <h3 class="font-[600] mt-[1.2rem]">12.90$ - 18.85$</h3>
+      <div class="divider my-2 w-[12rem]"></div> 
+      <p class="text-xs text-lightGray opacity-[0.8] mb-4">Red Dragon</p>
+      <div class="rating rating-sm rating-half justify-center mb-4">
+        <input type="radio" name="rating-7" class="rating-hidden" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-1" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-1" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-1" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-1" />
+        <input type="radio" name="rating-7" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />     
+    </div>
+    <button class="text-red-400 font-[600]" onclick="my_modal_3.showModal()">Details</button>
+              <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+              <img src="images/fruit8.png">
+              <h3 class="font-bold text-lg">Red Dragon</h3>
+              <div class="w-[70%]"><p class="py-4 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p></div>
+              <div class="rating rating-sm rating-half justify-center mb-4">
+                <input type="radio" name="rating-1" class="rating-hidden" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />     
+            </div>
+              <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+              <button class="btn bg-white text-red-400 border-1 border-red-400 rounded-md capitalize mr-2">Close</button>
+              <a href="#" class="btn bg-red-400 text-white border-1 border-red-400 rounded-md capitalize px-[1.6rem]">Shop Now</a>
+              </div>
+              </form>
+              </dialog>
+</div>
+<div class="flex flex-col items-center justify-center  border-2 rounded-md px-[4rem] py-[2.4rem]">
+  <img src="images/fruit9.png" alt="">
+  <h3 class="font-[600] mt-[1.2rem]">12.90$ - 18.85$</h3>
+  <div class="divider my-2 w-[12rem]"></div> 
+  <p class="text-xs text-lightGray opacity-[0.8] mb-4">Banana</p>
+  <div class="rating rating-sm rating-half justify-center mb-4">
+    <input type="radio" name="rating-6" class="rating-hidden" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-6" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />     
+  </div>
+  <button class="text-red-400 font-[600]" onclick="my_modal_4.showModal()">Details</button>
+  <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+  <img src="images/fruit9.png">
+  <h3 class="font-bold text-lg">Apples</h3>
+  <div class="w-[70%]"><p class="py-4 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p></div>
+  <div class="rating rating-sm rating-half justify-center mb-4">
+    <input type="radio" name="rating-1" class="rating-hidden" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-1" />
+    <input type="radio" name="rating-1" class="bg-red-400 mask mask-star-2 mask-half-2 mr-2" />     
+</div>
+  <div class="modal-action">
+<!-- if there is a button in form, it will close the modal -->
+  <button class="btn bg-white text-red-400 border-1 border-red-400 rounded-md capitalize mr-2">Close</button>
+  <a href="#" class="btn bg-red-400 text-white border-1 border-red-400 rounded-md capitalize px-[1.6rem]">Shop Now</a>
+  </div>
+  </form>
+  </dialog>
+</div>
+
+</div>
+<div class="flex justify-center items-center"><button class="btn btn-error mt text-white mt-10 w-[10rem] capitalize rounded-lg">Shop All</button></div>
+            
+</div>
+    </section>
+    <section id="Team" class="mt-[4.8rem]">
+      <div class="section--container flex flex-col">
+        <div class="hero h-[40rem] max-[768px]:h-[60rem] max-[425px]:h-[110rem]" style="background-image: url(images/banner1.png);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content text-white flex flex-col">
+            <div class="max-w-md mb-[1.6rem] mt-10 max-[425px]:mt-0">
+              <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+              <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="grid grid-cols-4 max-[768px]:grid-cols-2 max-[425px]:grid-cols-1 gap-[5rem]">
+              <div class="flex flex-col justify-center items-center">
+                <img src="images/member1.png" class="mb-[1.2rem]">
+                <h1 class="font-[600] text-[1.6em]">Awlad Hossain</h1>
+                <p class="">Fruits Expert</p>
+                <div class="flex flex-row justify-center items-center gap-6 mt-[1.2rem]">
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-facebook"></ion-icon></a>
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-twitter"></ion-icon></a>
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-linkedin"></ion-icon></a>
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <img src="images/member2.png" class="mb-[1.2rem]">
+                <h1 class="font-[600] text-[1.6em]">Safia Chowdhury</h1>
+                <p class="">Fruits Expert</p>
+                <div class="flex flex-row justify-center items-center gap-6 mt-[1.2rem]">
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-facebook"></ion-icon></a>
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-twitter"></ion-icon></a>
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-linkedin"></ion-icon></a>
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <img src="images/member3.png" class="mb-[1.2rem]">
+                <h1 class="font-[600] text-[1.6em]">Rokib Hossain</h1>
+                <p class="">Fruits Expert</p>
+                <div class="flex flex-row justify-center items-center gap-6 mt-[1.2rem]">
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-facebook"></ion-icon></a>
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-twitter"></ion-icon></a>
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-linkedin"></ion-icon></a>
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <img src="images/member4.png" class="mb-[1.2rem]">
+                <h1 class="font-[600] text-[1.6em]">Chaity</h1>
+                <p class="">Fruits Expert</p>
+                <div class="flex flex-row justify-center items-center gap-6 mt-[1.2rem]">
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-facebook"></ion-icon></a>
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-twitter"></ion-icon></a>
+                  <a href=""><ion-icon class="text-[1.6rem] text-red-400" name="logo-linkedin"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
@@ -130,7 +426,7 @@
 */
 - Font weights
 Default: 400
-Medium: 500
+Meredbg-red-400
 Semi-bold: 600
 Bold: 700
 
